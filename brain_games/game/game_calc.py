@@ -6,8 +6,8 @@ game = 'What is the result of the expression?'
 
 def function():
 
-    number1 = randint(0, 999)
-    number2 = randint(0, 999)
+    number1 = randint(0, 20)
+    number2 = randint(0, 20)
     a = f'{number1} + {number2}'
     a_answer = number1 + number2
     b = f'{number1} - {number2}'
@@ -17,6 +17,7 @@ def function():
 
     list = [a , b , c]
     question = random.choice(list)
+
     if question == a:
         answer = a_answer
     elif question == b:
@@ -24,4 +25,4 @@ def function():
     elif question == c:
         answer = c_answer
 
-    return answer, question
+    return str(answer), question
