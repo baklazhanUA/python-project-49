@@ -14,9 +14,11 @@ def function():
         if number1 > number2:
             a = number1 % number2
             answer = number2 % a
+            return answer, question
 
         elif number1 < number2:
             a = number2 % number1
             answer = number1 % a
+            return answer, question
 
-    return str(answer), question
+
