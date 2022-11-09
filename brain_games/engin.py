@@ -21,9 +21,8 @@ def run_game(name_game):
             counter = counter + 1
 
         elif user_answer != answer:
-            print(f'{user_answer} is wrong answer ;(.'
-                  f' Correct answer was {answer}. '
-                  f'Lets try again, {name}!')
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.")
+            print(f"Let's try again, {name}!")
 
             return
 
