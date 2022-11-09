@@ -4,7 +4,7 @@ game = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def function():
-    question = randint(0, 20)
+    question = randint(1, 20)
     if question % 2 == 0:
         answer = 'yes'
 
