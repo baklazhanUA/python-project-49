@@ -27,4 +27,4 @@ def run_game(name_game):
 
             return
 
-    print(f'Congratulations, {name}')
+    print(f'Congratulations, {name}!')
