@@ -15,7 +15,7 @@ def function():
     c = f'{number1} * {number2}'
     c_answer = number1 * number2
 
-    list = [a , b , c]
+    list = [a, b, c]
     question = random.choice(list)
 
     if question == a:
