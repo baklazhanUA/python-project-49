@@ -4,7 +4,6 @@ game = 'Find the greatest common divisor of given numbers.'
 
 
 def function():
-
     number1 = randint(0, 100)
     number2 = randint(0, 100)
     question = f'{number1} {number2}'
@@ -21,4 +20,4 @@ def function():
             answer = number1 % a
             return str(answer), question
 
-
+    return
