@@ -23,6 +23,4 @@ def function():
             question = question + '.. '
             answer = result
 
-    return print(answer, 'ddd', question)
-
-print(function())
+    return answer, question
