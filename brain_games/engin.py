@@ -9,6 +9,7 @@ def run_game(name_game):
     game = name_game.game
     print(game)
 
+    incorrect_answer = 'is wrong answer ;(. Correct answer was'
     counter = 1
 
     while counter <= 3:
@@ -21,7 +22,7 @@ def run_game(name_game):
             counter = counter + 1
 
         elif user_answer != answer:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.")
+            print(f"'{user_answer}' {incorrect_answer} '{answer}'.")
             print(f"Let's try again, {name}!")
             return
 
