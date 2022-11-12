@@ -8,9 +8,12 @@ def function():
     i = 2
     while question % i != 0:
         i = i + 1
-        if question == i:
-            answer = 'yes'
-            return answer, question
+    if question == i:
+        answer = 'yes'
+        return answer, question
 
     answer = 'no'
     return answer, question
+
+
+print(function())
