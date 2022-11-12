@@ -9,7 +9,7 @@ def function():
     start_i = 0
     stop_i = randint(5, 10)
     question = ''
-    random = randint(0, stop_i)
+    random = randint(1, stop_i)
     answer = ''
 
     while start_i <= stop_i:
@@ -21,6 +21,8 @@ def function():
             result = result + step_index
             start_i = start_i + 1
             question = question + '.. '
-            answer = str(result)
+            answer = result
 
-    return answer, question
+    return print(answer, 'ddd', question)
+
+print(function())
