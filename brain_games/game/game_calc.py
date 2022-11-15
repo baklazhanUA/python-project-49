@@ -25,4 +25,4 @@ def function():
 
     answer = is_calc()
 
-    return answer, question
+    return str(answer), question
