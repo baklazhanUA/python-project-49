@@ -1,28 +1,28 @@
 import random
 from random import randint
 
-game = 'What is the result of the expression?'
+QUESTION = 'What is the result of the expression?'
 
 
 def function():
-
     number1 = randint(0, 20)
     number2 = randint(0, 20)
-    a = f'{number1} + {number2}'
-    a_answer = number1 + number2
-    b = f'{number1} - {number2}'
-    b_answer = number1 - number2
-    c = f'{number1} * {number2}'
-    c_answer = number1 * number2
+    operators = '+ - *'
+    list = operators.split()
+    random_operators = random.choice(list)
+    question = f'{number1} {random_operators} {number2}'
 
-    list = [a, b, c]
-    question = random.choice(list)
+    def is_calc():
+        if random_operators == '+':
+            result = number1 + number2
+            return result
+        elif random_operators == '-':
+            result = number1 - number2
+            return result
+        else:
+            result = number1 * number2
+            return result
 
-    if question == a:
-        answer = a_answer
-    elif question == b:
-        answer = b_answer
-    elif question == c:
-        answer = c_answer
+    answer = is_calc()
 
-    return str(answer), question
+    return answer, question
