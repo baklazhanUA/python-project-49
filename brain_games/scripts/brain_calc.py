@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from ..engin import run_game
+from ..engine import run_game
 from ..game import game_calc
 
 

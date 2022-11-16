@@ -2,17 +2,17 @@ import prompt
 from .cli import welcome_user
 
 
-def run_game(name_game):
+def run_game(game):
 
     print('Welcome to the Brain Games!')
     name = welcome_user()
-    play = name_game.QUESTION
+    play = game.QUESTION
     print(play)
 
     counter = 1
 
     while counter <= 3:
-        answer, question = name_game.function()
+        answer, question = game.get_game()
         print(f'Question: {question}')
         user_answer = prompt.string('You answer: ')
 
