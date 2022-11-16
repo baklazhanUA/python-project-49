@@ -33,4 +33,4 @@ answer = is_calc()
 
 def get_game():
     question = f'{number1} {operator} {number2}'
-    return answer, question
+    return str(answer), question
