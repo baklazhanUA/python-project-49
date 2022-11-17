@@ -14,23 +14,17 @@ def is_random_operator():
 
 
 operator = is_random_operator()
-
-
-def is_calc():
-    if operator == '+':
-        result = number1 + number2
-        return result
-    elif operator == '-':
-        result = number1 - number2
-        return result
-    else:
-        result = number1 * number2
-        return result
-
-
-answer = is_calc()
+question = f'{number1} {operator} {number2}'
 
 
 def get_game():
-    question = f'{number1} {operator} {number2}'
+    if operator == '+':
+        answer = number1 + number2
+
+    elif operator == '-':
+        answer = number1 - number2
+
+    else:
+        answer = number1 * number2
+
     return str(answer), question

@@ -1,5 +1,4 @@
-import random
-from random import randint
+from random import randint, choice
 
 QUESTION = 'What number is missing in the progression?'
 
@@ -23,6 +22,6 @@ def get_game():
 
     progression = progression_generation()
     list_progression = progression.split()
-    answer = random.choice(list_progression)
+    answer = choice(list_progression)
     question = progression.replace(answer, '..')
     return answer, question

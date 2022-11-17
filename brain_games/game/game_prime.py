@@ -16,7 +16,8 @@ def get_game():
 
     if is_prime(question):
         answer = 'yes'
-        return answer, question
-    elif not is_prime(question):
+
+    else:
         answer = 'no'
-        return answer, question
+
+    return answer, question

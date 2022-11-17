@@ -15,7 +15,7 @@ def get_game():
 
     if is_even(question):
         answer = 'yes'
-    elif not is_even(question):
+    else:
         answer = 'no'
 
     return answer, question

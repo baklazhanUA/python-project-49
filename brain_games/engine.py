@@ -20,7 +20,7 @@ def run_game(game):
             print('Correct!')
             counter = counter + 1
 
-        elif user_answer != answer:
+        else:
             print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{answer}'.")
             print(f"Let's try again, {name}!")
