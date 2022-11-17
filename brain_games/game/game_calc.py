@@ -1,5 +1,4 @@
-import random
-from random import randint
+from random import randint, choice
 
 QUESTION = 'What is the result of the expression?'
 number1 = randint(0, 20)
@@ -9,7 +8,7 @@ number2 = randint(0, 20)
 def is_random_operator():
     sign = '+ - *'
     list = sign.split()
-    random_sign = random.choice(list)
+    random_sign = choice(list)
     return random_sign
 
 
